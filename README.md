@@ -1,2 +1,2 @@
-# ReactToDo
-React ToDo list with TailwindCSS
+# React To Do List
+### React To Do List with TailwindCSS.
