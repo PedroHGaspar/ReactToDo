@@ -39,22 +39,22 @@ const App = () => {
   const [search, setSearch] = useState("");
 
   const addTodo = (text, category) => {
-    const newtodo = [...todo,
+    const newTodo = [...todo,
     { id: Math.floor(Math.random() * 1000), text, category, isCompleted: false }
     ];
-    setTodo(newtodo);
+    setTodo(newTodo);
   };
 
   const removeTodo = (id) => {
-    const newtodo = [...todo];
-    const filteredtodo = newtodo.filter((todo) => todo.id !== id ? todo : null)
-    setTodo(filteredtodo);
+    const newTodo = [...todo];
+    const filteredtoDo = newTodo.filter((todo) => todo.id !== id ? todo : null)
+    setTodo(filteredtoDo);
   };
 
   const completeTodo = (id) => {
-    const newtodo = [...todo];
-    newtodo.map((todo) => todo.id === id ? todo.isCompleted = !todo.isCompleted : todo)
-    setTodo(newtodo);
+    const newTodo = [...todo];
+    newTodo.map((todo) => todo.id === id ? todo.isCompleted = !todo.isCompleted : todo)
+    setTodo(newTodo);
   };
 
   return (
